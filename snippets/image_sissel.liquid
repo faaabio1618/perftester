@@ -1,0 +1,24 @@
+{% assign width = width | default: 720 %}
+<div class="ratio" style="--ratio: calc({{ image.width }} / {{ image.height }})">
+    <picture>
+        <source
+                srcset="{{ image | image_url: width: 300 }}"
+                media="(max-width: 343px)">
+        <source
+                srcset="{{ image | image_url: width: 420 }}"
+                media="(min-width: 344px) and (max-width: 576px)">
+        <source
+                srcset="{{ image | image_url: width: 540 }}"
+                media="(min-width: 1024px) and (max-width: 1399px)">
+        <source
+                srcset="{{ image | image_url: width: width }}"
+                media="(min-width: 1400px)">
+        <img
+                src="{{ image | image_url: width: 600 }}"
+                alt="{{ image.alt }}"
+                loading="lazy"
+                class="lazy"
+                height="{{ image.height }}px"
+                width="{{ image.width }}px">
+    </picture>
+</div>

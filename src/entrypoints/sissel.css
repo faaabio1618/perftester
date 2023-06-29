@@ -1,0 +1,28 @@
+.ratio {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.ratio:before {
+    content: "";
+    display: block;
+    padding-top: calc(var(--ratio) * 100%);
+    background-color: whitesmoke;
+}
+
+.ratio > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ratio picture, .ratio img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
