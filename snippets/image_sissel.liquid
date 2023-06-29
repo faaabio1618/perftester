@@ -1,4 +1,3 @@
-{% assign width = width | default: 720 %}
 <div class="ratio" style="--ratio: calc({{ image.width }} / {{ image.height }})">
     <picture>
         <source
@@ -11,7 +10,7 @@
                 srcset="{{ image | image_url: width: 540 }}"
                 media="(min-width: 1024px) and (max-width: 1399px)">
         <source
-                srcset="{{ image | image_url: width: width }}"
+                srcset="{{ image | image_url: width: image.width }}"
                 media="(min-width: 1400px)">
         <img
                 src="{{ image | image_url: width: 600 }}"
