@@ -1,14 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "header2",
+      "type": "header_b",
       "settings": {
         "title": "Speeeeeeeeeeeed",
         "banner": "shopify:\/\/shop_images\/theme_cover_image.jpg"
       }
     },
     "gallery": {
-      "type": "gallery2",
+      "type": "gallery_b",
       "blocks": {
         "95745504-b138-4ed4-b83f-0ca3dc7300ca": {
           "type": "image",
@@ -101,12 +101,12 @@
       }
     },
     "slider": {
-      "type": "slider2",
+      "type": "slider_b",
       "settings": {
       }
     },
     "footer": {
-      "type": "footer2",
+      "type": "footer_b",
       "blocks": {
         "fc7a0861-1d9a-42cc-94cd-30f43ab723cd": {
           "type": "resource",

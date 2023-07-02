@@ -1,22 +1,4 @@
 {% comment %}theme-check-disable ImgLazyLoading, RemoteAsset{% endcomment %}
-{% comment %}
-  Renders a specific image.
-
-  Guidelines:
-    - Think of snippets like functions each time you are going
-    to reuse a code block, why not just make it a snippet ;)
-
-  Accepts:
-    - image: {object} Image object (required)
-    - class: {string} Extra classes (optional)
-    - lazyload: {boolean} Lazyload the image (optional) (default: true)
-    - alt: {string} Custom image ALT (optional) (default: image.alt)
-    - placeholder: {string} Placeholder name when image is empty (optional) (default: 'hero-apparel-1')
-
-  Usage:
-    {% render 'image' with product.featured_image %}
-{% endcomment %}
-
 {% liquid
     assign image_class = 'aspect-auto h-full w-full rounded-md object-cover ' | append: class
     assign alt = alt | default: image.alt | escape

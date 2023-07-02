@@ -5,7 +5,7 @@
                 <div class="mb-6 md:mb-0">
                     <a href="https://shopify.com" class="flex items-center">
                         <div class="inline-block aspect-square h-5 mr-2">
-                            {% render 'image_sissel', image: section.settings.logo, width: 200 %}
+                            {% render 'image_b', image: section.settings.logo, width: 200 %}
                         </div>
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ section.settings.company }}</span>
                     </a>
@@ -18,7 +18,7 @@
                                 {% if block.type == 'resource' %}
                                     <li class="mb-4">
                                         <div class="inline-block aspect-square h-5 mr-2">
-                                            {% render 'image_sissel', image: block.settings.image, width: 200 %}
+                                            {% render 'image_b', image: block.settings.image, width: 200 %}
                                         </div>
                                         <a href="{{ block.settings.url }}" class="hover:underline">
                                             {{ block.settings.text }}
@@ -35,7 +35,7 @@
                                 {% if block.type == 'social' %}
                                     <li class="mb-4">
                                         <div class="inline-block aspect-square h-5 mr-2">
-                                            {% render 'image_sissel', image: block.settings.image, width: 200 %}
+                                            {% render 'image_b', image: block.settings.image, width: 200 %}
                                         </div>
                                         <a href="{{ block.settings.url }}" class="hover:underline">
                                             {{ block.settings.text }}
@@ -66,7 +66,7 @@
 
 {% schema %}
 {
-  "name": "Footer2",
+  "name": "FooterB",
   "blocks": [
     {
       "type": "resource",
@@ -125,7 +125,7 @@
   ],
   "presets": [
     {
-      "name": "Footer Sissel"
+      "name": "FooterB"
     }
   ]
 }

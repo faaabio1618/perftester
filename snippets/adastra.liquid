@@ -4,14 +4,14 @@
   Do not attempt to modify this file directly, as any changes will be overwritten by the next build.
 {% endcomment %}
 {% assign path = adastra | replace: '~/', '../' | replace: '@/', '../' %}
-{% if path == "/src/entrypoints/base.css" or path == "base.css" %}
-  {{ 'base-e69b14d8.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
+{% if path == "/src/entrypoints/b.css" or path == "b.css" %}
+  {{ 'b-80834dbf.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
+{% elsif path == "/src/entrypoints/base.css" or path == "base.css" %}
+  {{ 'base-640ac930.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
 {% elsif path == "/src/entrypoints/index.js" or path == "index.js" %}
   <link rel="modulepreload" href="{{ 'index-281b0674.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
   <script src="{{ 'index-281b0674.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% elsif path == "/src/entrypoints/lazysizes.js" or path == "lazysizes.js" %}
-  <link rel="modulepreload" href="{{ 'lazysizes-f074ed29.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
-  <script src="{{ 'lazysizes-f074ed29.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
-{% elsif path == "/src/entrypoints/sissel.css" or path == "sissel.css" %}
-  {{ 'sissel-80834dbf.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
+  <link rel="modulepreload" href="{{ 'lazysizes-f0dc9a93.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
+  <script src="{{ 'lazysizes-f0dc9a93.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% endif %}

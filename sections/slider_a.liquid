@@ -5,7 +5,7 @@
         <div class="w-full max-w-3xl h-[50rem] relative overflow-hidden">
             {% for product in collections['all'].products %}
                 <div class="slide w-full max-w-3xl h-full aspect-auto absolute transition-all duration-500 ">
-                    {% render 'image', image: product.featured_image, width: 1000 %}
+                    {% render 'image_a', image: product.featured_image, width: 1000 %}
                 </div>
             {% endfor %}
             <button class="btn btn-prev bg-amber-50 absolute w-1/12 h-full p-10 border-none rounded z-10 cursor-pointer font-body top-0.5 left-0 active:scale-110"><</button>
@@ -49,12 +49,12 @@
 </section>
 {% schema %}
 {
-  "name": "Slider",
+  "name": "SliderA",
   "settings": [
   ],
   "presets": [
     {
-      "name": "Product Slider"
+      "name": "Product Slider A"
     }
   ]
 }

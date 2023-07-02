@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         {% for block in section.blocks %}
             <div class="h-auto max-w-full rounded-lg">
-                {% render 'image', image: block.settings.image %}
+                {% render 'image_a', image: block.settings.image %}
             </div>
         {% endfor %}
     </div>
@@ -11,7 +11,7 @@
 </section>
 {% schema %}
 {
-  "name": "Gallery",
+  "name": "GalleryA",
   "blocks": [
     {
       "type": "image",
@@ -29,7 +29,7 @@
   ],
   "presets": [
     {
-      "name": "Gallery"
+      "name": "GalleryA"
     }
   ]
 }
