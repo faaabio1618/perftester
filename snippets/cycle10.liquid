@@ -1,0 +1,1 @@
+{% assign loop = "1,2,3,4,5,6,7,8,9,10" | split: "," %}{% for i in loop %}{% for j in loop %}{% assign x = x | plus: 1 %}{% endfor %}{% endfor %}{{ x }}

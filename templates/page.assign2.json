@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "assign2"
+    }
+  },
+  "order": ["main"]
+}

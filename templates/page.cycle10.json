@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "cycle10"
+    }
+  },
+  "order": ["main"]
+}

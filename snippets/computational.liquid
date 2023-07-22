@@ -1,0 +1,17 @@
+{% assign x = 0 %}
+{% for collection in collections %}
+    {% for p in collection.products %}
+        {% for p1 in collection.products %}
+            {% for p2 in collection.products %}
+                {% for p3 in collection.products %}
+                    {% for p4 in collection.products %}
+                        {% for p5 in collection.products %}
+                                {% assign x = x | plus: 1 %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{{ x }}

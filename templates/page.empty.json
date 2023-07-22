@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "big_empty-section"
+    }
+  },
+  "order": ["main"]
+}
