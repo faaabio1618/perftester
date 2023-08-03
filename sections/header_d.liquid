@@ -1,0 +1,35 @@
+<section>
+    <div class="w-full bg-center" style="height:12rem">
+        <div class="relative flex items-center justify-center h-full w-full">
+            <div class="absolute w-full h-full">
+                {% render 'image_d', size: 2000, sourceData: '400:400,600:600,1000:1000,2000:2000', classes: 'template-d', lazy: false, image: section.settings.banner %}
+            </div>
+            <div class="text-center absolute">
+                <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">{{ section.settings.title }}</h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% schema %}
+{
+  "name": "HeaderC",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HeaderC"
+    }
+  ]
+}
+{% endschema %}

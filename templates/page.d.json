@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "main": {
+      "type": "header_d",
+      "settings": {
+        "title": "Speeeeeeeeeeeed",
+        "banner": "shopify:\/\/shop_images\/theme_cover_image.jpg"
+      }
+    },
+    "gallery": {
+      "type": "gallery_d",
+      "blocks": {
+        "95745504-b138-4ed4-b83f-0ca3dc7300ca": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/646dc1f48b6cca0022f0d914-2023-f1-coverart-monaco-full-image.png"
+          }
+        },
+        "8347f840-a2fa-4a3f-8860-0dab1c65a568": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/630f1b10726d351ec2aafae2-ferrari-f1-scuderia-cover-art-2022-netherland-full-new.png"
+          }
+        },
+        "62aed83d-2bbf-42b8-aaf5-082dd62966b2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/647705398b6cca0022f0df29-2023-ferrari-spanish-gp-barcelona-cover-art-full.png"
+          }
+        },
+        "6c8eb2ad-df17-4f7c-9e04-0ff16ac2444c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/64240442dee8080023240e55-australian-gp-2023-cover-art-valerio-befani.png"
+          }
+        },
+        "010f02ff-6855-4e39-bf1a-7812af9c53c9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/636b824db097a13866eb8145-2022-ferrari-brazilian-grand-prix-cover-art-full.png"
+          }
+        },
+        "bb083f5d-4d07-4877-9482-2ca64bfffcba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6442b10ef0839b00225ae813-scuderia-ferrari-2023-saudi-arabian-gp-cover-art.png"
+          }
+        },
+        "2364bc0b-9a7f-497b-92da-e5c957fab0fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/649bfbc8437d870023cf50fb-scuderia-ferrari-austrian-gp-2023-cover-art-full.png"
+          }
+        },
+        "82a35ef4-9670-4b81-93cf-44c2cf6ad3ea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6351059e55c5ea24febb74a8-scuderia-ferrari-usa-gp-2022-cover-art-image.png"
+          }
+        },
+        "7a6f07aa-f9e1-4c9e-af65-82f9df5656f8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6448f74b1697e200236247ce-scuderia-ferrari-azerbaijan-2023-cover-art-full.png"
+          }
+        },
+        "a6d3849f-fb5d-4c2e-b48f-f410e8ca8525": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/63ff30b596dffd0918d191d5-scuderia-ferrari-2023-cover-art-valerio-befani-full-image.png"
+          }
+        },
+        "8987b6d0-65d4-416b-8216-cd23f9cfd7b8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6319a9316671a665c3dcd567-italian-gp-2022-cover-art-gianmarco-veronesi-scuderia-ferrari.png"
+          }
+        },
+        "12940b74-4a7e-441a-8371-6231c68d4ecb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6358e1ea0b1f8a610e3f9532-scuderia-ferrari-mexican-gp-cover-art-gianmarco-veronesi.png"
+          }
+        }
+      },
+      "block_order": [
+        "95745504-b138-4ed4-b83f-0ca3dc7300ca",
+        "8347f840-a2fa-4a3f-8860-0dab1c65a568",
+        "62aed83d-2bbf-42b8-aaf5-082dd62966b2",
+        "6c8eb2ad-df17-4f7c-9e04-0ff16ac2444c",
+        "010f02ff-6855-4e39-bf1a-7812af9c53c9",
+        "bb083f5d-4d07-4877-9482-2ca64bfffcba",
+        "2364bc0b-9a7f-497b-92da-e5c957fab0fa",
+        "82a35ef4-9670-4b81-93cf-44c2cf6ad3ea",
+        "7a6f07aa-f9e1-4c9e-af65-82f9df5656f8",
+        "a6d3849f-fb5d-4c2e-b48f-f410e8ca8525",
+        "8987b6d0-65d4-416b-8216-cd23f9cfd7b8",
+        "12940b74-4a7e-441a-8371-6231c68d4ecb"
+      ],
+      "settings": {
+      }
+    },
+    "slider": {
+      "type": "slider_d",
+      "settings": {
+      }
+    },
+    "footer": {
+      "type": "footer_d",
+      "blocks": {
+        "fc7a0861-1d9a-42cc-94cd-30f43ab723cd": {
+          "type": "resource",
+          "settings": {
+            "url": "\/",
+            "text": "Home",
+            "image": "shopify:\/\/shop_images\/licenses.png"
+          }
+        },
+        "a623647c-003c-46dd-9b31-593dad13a6ea": {
+          "type": "resource",
+          "settings": {
+            "url": "\/",
+            "text": "Our Team",
+            "image": "shopify:\/\/shop_images\/engineer.png"
+          }
+        },
+        "2703fa91-966e-4d77-8bb6-73f43862659a": {
+          "type": "resource",
+          "settings": {
+            "url": "\/",
+            "text": "Our Vision",
+            "image": "shopify:\/\/shop_images\/construction-in-height.png"
+          }
+        },
+        "15c0d769-ae82-4141-92b7-ee3c0542aa8a": {
+          "type": "social",
+          "settings": {
+            "url": "\/",
+            "text": "Here",
+            "image": "shopify:\/\/shop_images\/construction.png"
+          }
+        },
+        "37d36b2d-3e2a-4d74-869b-d5befadfc0ad": {
+          "type": "social",
+          "settings": {
+            "url": "\/",
+            "text": "There",
+            "image": "shopify:\/\/shop_images\/worker.png"
+          }
+        },
+        "3f52847e-64c9-44dc-8030-862b86e583d5": {
+          "type": "social",
+          "settings": {
+            "url": "\/",
+            "text": "Overthere",
+            "image": "shopify:\/\/shop_images\/feasiblity.png"
+          }
+        }
+      },
+      "block_order": [
+        "fc7a0861-1d9a-42cc-94cd-30f43ab723cd",
+        "a623647c-003c-46dd-9b31-593dad13a6ea",
+        "2703fa91-966e-4d77-8bb6-73f43862659a",
+        "15c0d769-ae82-4141-92b7-ee3c0542aa8a",
+        "37d36b2d-3e2a-4d74-869b-d5befadfc0ad",
+        "3f52847e-64c9-44dc-8030-862b86e583d5"
+      ],
+      "settings": {
+        "company": "Speeeeeed",
+        "logo": "shopify:\/\/shop_images\/0506ca0ec34b7b975c42934685b045f2.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gallery",
+    "slider",
+    "footer"
+  ]
+}

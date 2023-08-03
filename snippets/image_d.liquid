@@ -1,0 +1,104 @@
+{% comment %}
+  Renders an image
+
+  Accepts:
+    - image: {object} Image object. If missing, SVG placeholder is used as source
+    - heightConstraint: {boolean} true to specify the height instead of the width
+    - size: {number} Size constraint applied to the image
+    - sourceData: {comma separated string} 'sourceConstraint:sourceBreakpoint,...'
+    - classes: {comma separated string} 'picture-classes,image-classes'
+    - attributes: {comma separated string} 'picture-attribtues,image-attributes'
+    - lazy: {boolean} true for lazyloading
+    - index: {number} To be implemented, to work with section.index
+    - placeholder: {string} SVG Placeholder name. Used when image object is missing/incorrect. Defaults to 'image'
+
+  Usage:
+    {% render 'image' %}
+{% endcomment %}
+
+{% liquid
+    assign usePlaceholder = true
+    if image and image != blank
+        assign usePlaceholder = false
+    endif
+
+    if classes != blank
+        assign splitClasses = classes | replace: ',', ''
+        if splitClasses == classes
+            assign pictureClasses = classes
+            assign imageClasses = ''
+        else
+            assign pictureClasses = classes | first
+            assign imageClasses = classes | last
+        endif
+    endif
+
+    if attributes != blank
+        assign splitAttributes = attributes | replace: ',', ''
+        if splitAttributes == attributes
+            assign pictureAttributes = attributes
+            assign imageAttributes = ''
+        else
+            assign pictureAttributes = attribute | first
+            assign imageAttributes = attribute | last
+        endif
+    endif
+
+    if usePlaceholder
+        assign numberOfSources = 0
+        assign imageSource = placeholder | default: 'image' | placeholder_svg_tag | base64_encode | prepend: 'data:image/svg+xml;base64,'
+        assign imageAlt = placeholder | default: 'image' | append: ' SVG placeholder'
+        assign imageWidth = 2000
+        assign imageHeight = 2000
+        assign imageLoading = 'lazy'
+    else
+        if sourceData == blank
+            assign numberOfSources = 0
+        else
+            assign sourceDataArray = sourceData | split: ','
+            assign numberOfSources = sourceDataArray.size
+        endif
+
+        if heightConstraint
+            assign imageHeight = size | default: image.height
+            assign imageWidth = image.width | times: imageHeight | divided_by: image.height
+            assign imageSource = image | image_url: height: imageHeight
+        else
+            assign imageWidth = size | default: image.width
+            assign imageHeight = image.height | times: imageWidth | divided_by: image.width
+            assign imageSource = image | image_url: width: imageWidth
+        endif
+        assign imageAlt = image.alt
+
+        assign imageLoading = 'lazy'
+        if lazy == false
+            assign imageLoading = 'eager'
+        endif
+    endif
+%}
+
+<picture class="{{ pictureClasses }}" {{ pictureAttributes }}>
+    {% for sourceData in sourceDataArray limit: numberOfSources %}
+        {% liquid
+            assign sourceConstraintValue = sourceData | split: ':' | first
+            if heightConstraint
+                assign sourceSource = image | image_url: height: sourceConstraintValue
+            else
+                assign sourceSource = image | image_url: width: sourceConstraintValue
+            endif
+
+            assign sourceMediaValue = sourceData | split: ':' | last
+            assign sourceMedia = '(width <= ' | append: sourceMediaValue | append: 'px)'
+        %}
+        <source srcset="{{ sourceSource }}" media="{{ sourceMedia }}">
+    {% endfor %}
+    <img
+            class="{{ imageClasses }}"
+            src="{{ imageSource }}"
+            alt="{{ imageAlt }}"
+            width="{{ imageWidth }}"
+            height="{{ imageHeight }}"
+            loading="{{ imageLoading }}"
+            {{ imageAttributes }}
+    >
+</picture>

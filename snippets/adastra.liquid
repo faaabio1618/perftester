@@ -8,10 +8,12 @@
   {{ 'b-80834dbf.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
 {% elsif path == "/src/entrypoints/base.css" or path == "base.css" %}
   {{ 'base-640ac930.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
+{% elsif path == "/src/entrypoints/d.css" or path == "d.css" %}
+  {{ 'd-3bb3d2cf.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload }}
 {% elsif path == "/src/entrypoints/index.js" or path == "index.js" %}
   <link rel="modulepreload" href="{{ 'index-281b0674.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
   <script src="{{ 'index-281b0674.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% elsif path == "/src/entrypoints/lazysizes.js" or path == "lazysizes.js" %}
-  <link rel="modulepreload" href="{{ 'lazysizes-f0dc9a93.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
-  <script src="{{ 'lazysizes-f0dc9a93.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  <link rel="modulepreload" href="{{ 'lazysizes-f074ed29.js' | asset_url | split: '?' | first }}" as="script" crossorigin="anonymous">
+  <script src="{{ 'lazysizes-f074ed29.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% endif %}

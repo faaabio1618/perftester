@@ -1,0 +1,36 @@
+<section class="mt-10">
+    <h2 class="text-center">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {% for block in section.blocks %}
+            <div class="h-auto max-w-full rounded-lg">
+                {% render 'image_d',sourceData: '400:400,600:600,1000:1000',classes:'template-d', image: block.settings.image %}
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+{% schema %}
+{
+  "name": "GalleryC",
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": [
+  ],
+  "presets": [
+    {
+      "name": "GalleryC"
+    }
+  ]
+}
+{% endschema %}
